@@ -1,0 +1,19 @@
+{
+  "commentAnchors.tags.list": [
+    {
+      "tag": "FUNCTION",
+      "scope": "workspace",
+      "iconColor": "default",
+      "highlightColor": "#499762",
+      "styleComment": false,
+      "commentAnchors.epic.provideAutoCompletion": true
+    },
+    {
+      "tag": "EVENT",
+      "scope": "workspace",
+      "iconColor": "default",
+      "highlightColor": "#499762",
+      "styleComment": false
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <title>Weather App</title>
+  </head>
+  <style>
+    .card-bg {
+      background-image: linear-gradient(#00d4ff, #2f92c1);
+      border: none;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-sm-6 col">
+          <div class="card mt-4 card-bg">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary active">
+                <input
+                  type="radio"
+                  name="deg"
+                  value="fahrenheit"
+                  autocomplete="off"
+                  checked
+                />
+                Fahrenheit ( °F )
+              </label>
+              <label class="btn btn-secondary">
+                <input
+                  type="radio"
+                  name="deg"
+                  value="celsius"
+                  autocomplete="off"
+                />
+                Celsius ( °C )
+              </label>
+            </div>
+            <div class="card-body text-light text-center">
+              <img src="img/loading.gif" alt="loading" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="locModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="locModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="locModalLabel">Enter City and State</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="cityInput">City</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="cityInput"
+                  placeholder="Enter a City..."
+                />
+              </div>
+              <div class="form-group">
+                <label for="stateInput">State</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="stateInput"
+                  placeholder="Enter a State..."
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              id="saveData"
+              class="btn btn-primary"
+              data-dismiss="modal"
+            >
+              Get Weather
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="weather.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
