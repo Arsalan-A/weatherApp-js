@@ -1,7 +1,7 @@
 class Weather {
   constructor() {
     this.apiKey = 'AIzaSyCQMC9iI1eo7nso0suSubYBfQgX_77ows0';
-    this.weatherApiKey = '723a0a702b284035e0d47dae62c7d6ef';
+    this.weatherApiKey = '4f561f6048b6af0e91fe53d50ad9ae1d';
   }
 
   //METHOD: get current Location - City and State
